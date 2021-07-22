@@ -1,4 +1,5 @@
 ### Hi there 👋
+![debnathshoham's GitHub Stats](https://github-readme-stats.vercel.app/api?username=debnathshoham&show_icons=true)
 
 <!--
 **debnathshoham/debnathshoham** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
