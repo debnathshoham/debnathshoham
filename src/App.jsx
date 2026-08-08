@@ -37,6 +37,30 @@ const App = () => {
           
           {/* Left Column: Fixed Info */}
           <header className="lg:sticky lg:top-32 lg:h-fit space-y-6">
+            <div className="flex justify-center">
+              <div className="w-32 h-32 sm:w-36 sm:h-36 overflow-hidden rounded-full border border-slate-700/80 bg-slate-900 shadow-xl shadow-cyan-950/20">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcSet="/photos/shoham-320.avif 320w, /photos/shoham-640.avif 640w, /photos/shoham-960.avif 960w"
+                    sizes="(min-width: 1024px) 9rem, 8rem"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet="/photos/shoham-320.webp 320w, /photos/shoham-640.webp 640w, /photos/shoham-960.webp 960w"
+                    sizes="(min-width: 1024px) 9rem, 8rem"
+                  />
+                  <img
+                    src="/photos/shoham-640.webp"
+                    alt="Shoham Debnath"
+                    className="h-full w-full object-cover object-center"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
+
             <div>
               <h1 className="text-5xl font-extrabold text-white tracking-tight">Shoham Debnath</h1>
               <h2 className="text-xl text-cyan-400 mt-3 font-medium">Software Developer @ KKR</h2>
@@ -86,7 +110,7 @@ const App = () => {
                     <li>Engineered DataBrowser (FastAPI, React) with multi-layer caching (Redis + sessionStorage), saving $1.4M/year and using API logging to improve query patterns and UX.</li>
                     <li>Optimized SQL stored procedures through batch processing and built data quality checks for transaction reconciliation.</li>
                     <li>Established TDD standards with 500+ tests and 90% coverage.</li>
-                    <li>Built observability with Grafana and PagerDuty, mentored two developers, and conducted 50+ technical interviews for SWE roles.</li>
+                    <li>Built observability with Grafana and PagerDuty, and conducted 50+ technical interviews for SWE roles.</li>
                   </ul>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {['Dagster', 'FastAPI', 'Redis', 'React', 'TDD'].map(tag => (
