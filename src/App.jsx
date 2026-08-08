@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Mail, Terminal, Code2, Cpu } from "lucide-react";
 
 const App = () => {
-  const skills = ['Python', 'Snowflake' , 'SQL', 'FastAPI', 'Dagster', 'Redis', 'Docker', 'AWS', 'LangChain'];
+  const skills = ['Python', 'Snowflake' , 'SQL Server', 'FastAPI', 'Dagster', 'Redis', 'Docker', 'AWS', 'LangChain', 'Weaviate', 'k8s', 'pandas', 'polars'];
   const [activeSection, setActiveSection] = useState('experience');
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const App = () => {
           <header className="lg:sticky lg:top-32 lg:h-fit space-y-6">
             <div>
               <h1 className="text-5xl font-extrabold text-white tracking-tight">Shoham Debnath</h1>
-              <h2 className="text-xl text-cyan-400 mt-3 font-medium">Manager / Sr. Software Engineer II @ KKR</h2>
+              <h2 className="text-xl text-cyan-400 mt-3 font-medium">Software Developer @ KKR</h2>
               <p className="mt-6 text-slate-400 leading-relaxed max-w-md">
                 Driving data platform modernization, compliance model governance, and open source performance engineering.
               </p>
